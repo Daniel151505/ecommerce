@@ -6,10 +6,14 @@ h1 span {
     color: #037bc0
 }
 
-footer a {
-    text-transform:  uppercase;
+nav a {
+    text-transform: uppercase;
 }
 
-a {
+.navegacion a {
     text-transform: lowercase;
+}
+
+#navegacion a {
+    text-transform: capitalize;
 }
