@@ -1,72 +1,72 @@
-html {
-    box-sizing: border-box;
-    font-size: 62.5%; /* 1REM = 10px*/
+html { 
+    box-sizing: border-box; /* ej: tenemos un div de 250px, luego agregamos un width y luego un padding al div, esto deberia resultar que el div crece, pero al poner esta propiedad hacemos que no se modifique el tamaño del elemento y quede siempre de 250px en total con lo que le hayamos agregado */
+    font-size: 62.5%; /*Esto es un pequeño hack para que cada REM sea = a 10px, entonces es mas simple calcular los REM a usar.*/
 }
-
-*, *:before *:after {
+ 
+*, *:before, *:after {
     box-sizing: inherit;
 }
-
+ 
 body {
-    font-family: 'Raleway', sans-serif;
-    font-size: 1.6rem;
-    line-height: 2;
+    font-family: 'Raleway', sans-serif; /*esta es la fuente que vamos a utilizar en los proyectos y tambien se importan en el head del HTML */
+    font-size: 1.6rem; 
+    line-height: 2; /*este es el tamaño del interlineado entro oracion y oracion de un parrafo*/
 }
-
+ 
 /* Globales */
-
+ 
 h1, h2, h3 {
     font-family: 'Playfair Display', serif;
     margin: 0 0 5rem 0;
 }
-
+ 
 h1 {
     font-size: 5rem;
 }
-
+ 
 h2 {
     font-size: 4rem;
 }
-
+ 
 h3 {
     font-size: 3rem;
 }
-
+ 
 a {
     text-decoration: none;
     color: #000;
 }
-
+ 
 .contenedor {
     max-width: 120rem;
-    margin: 0 auto;
+    margin: 0 auto; /* esto es para centrar el nav */
 }
-
+ 
 img {
-    max-width: 100%;
-    display: block;
+    max-width: 100%; /* esto dice que la imagen va tomar todo el espacio disponible del div y no mas aunque la img sea mas grande, si el div crece la img tambien y viceversa */
+    display: block; /*ponemos este display en las img para que no haya nada de separacion con el enlace */
 }
-
+ 
 /* Header y Navegación */
 .nombre-sitio {
     margin-top: 5rem;
     text-align: center;
 }
-
+ 
 .nombre-sitio span {
     color: #037bc0;
 }
-
+ 
 .contenedor-navegacion {
     border-top: 1px solid #e1e1e1;
 }
-
+ 
 .nav-principal {
     padding: 2rem 0px;
     display: flex;
     justify-content: space-between;
 }
-
+ 
 .hero {
     background-image: url(../img/principal.jpg);
     background-repeat: no-repeat;
@@ -74,13 +74,13 @@ img {
     background-position: center center;
     height: 55rem;
 }
-
+ 
 /* Categorías */
-
+ 
 .categorias {
     padding-top: 5rem;
 }
-
+ 
 .categorias h2 {
     text-align: center;
 }
@@ -91,25 +91,49 @@ img {
     padding: 2rem;
     font-size: 2rem;
 }
-
+ 
 .categoria a:hover{
     background-color: #037bc0;
     color: #FFFFFF;
     border-bottom-right-radius: 1rem;
 }
-
+ 
 .listado-categorias {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
 }
-
-/* Bloque Nosotros */
-
+ 
+/* Bloque Sobre Nosotros */
+ 
 .sobre-nosotros {
-    background-image: linear-gradient( to right, transparent 50%, #037bc0 50%, #037bc0 100% ), url(../img/nosotros.jpg);
-    background-position: left center;
-    padding: 10rem 0;
-    background-repeat: no-repeat;
-    background-size: 100%, 120rem;
+   background-image: linear-gradient( to right, transparent 50%, #037bc0 50%, #037bc0 100% ), url(../img/nosotros.jpg);
+   padding: 10rem 0;
+   background-repeat: no-repeat;
+   background-position: left center ;
+   background-size: 100%, 80rem; 
 }
+ 
+.sobre-nosotros-position {
+    display: flex;
+    justify-content: flex-end;
+}
+ 
+.texto-nosotros {
+    flex-basis: 50%;
+    padding-left: 10rem;
+    color: #fff;
+}
+
+/* forma de ubicar y alinear el texto de "sobre nosotros" con Grid
+.sobre-nosotros-position {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 6rem; /* esto es para separar el texto 
+}
+ 
+.texto-nosotros {
+    padding-left: 10rem (usualmente no se usa padding en CSS grid) 
+    grid-column: 2 / 3;
+}
+*/
