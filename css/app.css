@@ -46,6 +46,12 @@ img {
     max-width: 100%; /* esto dice que la imagen va tomar todo el espacio disponible del div y no mas aunque la img sea mas grande, si el div crece la img tambien y viceversa */
     display: block; /*ponemos este display en las img para que no haya nada de separacion con el enlace */
 }
+
+/* Utilidades */
+
+.text-center {
+    text-align: center;
+}
  
 /* Header y Navegación */
 .nombre-sitio {
@@ -137,3 +143,31 @@ img {
     grid-column: 2 / 3;
 }
 */
+
+/* Listado de productos */
+
+.contenido-principal{
+    padding-top: 5rem;
+ }
+
+.producto {
+    background-color: #037bc0;
+}
+
+.texto-producto {
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.texto-producto h3 {
+    margin: 0;
+}
+
+.texto-producto p {
+    margin: 0 0 .5rem 0;
+}
+
+.texto-producto .precio {
+    font-size: 2.8rem;
+    font-weight: 900;
+}
