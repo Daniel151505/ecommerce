@@ -31,61 +31,67 @@
       </nav>
     </div>
 
-
     <main class="contenido-principal contenedor">
       <h2 class="text-center">Contacto</h2>
 
       <form action="">
-
         <fieldset>
-            <legend>Tus Datos</legend>
-            <div class="campo">
-                <label for="nombre">Nombre:</label>
-                <input id="nombre" type="text" placeholder="Tu Nombre">
-            </div>
+          <legend>Tus Datos</legend>
+          <div class="campo">
+            <label for="nombre">Nombre:</label>
+            <input id="nombre" type="text" placeholder="Tu Nombre" />
+          </div>
 
-            <div class="campo">
-                <label for="asunto">Asunto:</label>
-                <input id="asunto" type="text" placeholder="Tu Asunto">
-            </div>
+          <div class="campo">
+            <label for="asunto">Asunto:</label>
+            <input id="asunto" type="text" placeholder="Tu Asunto" />
+          </div>
 
-            <div class="campo">
-                <label for="email">E-mail:</label>
-                <input id="email" type="email" placeholder="Tu Email">
-            </div>
+          <div class="campo">
+            <label for="email">E-mail:</label>
+            <input id="email" type="email" placeholder="Tu Email" />
+          </div>
 
-            <div class="campo">
-                <label for="telefono">Teléfono:</label>
-                <input id="telefono" type="tel" placeholder="Tu Teléfono">
-            </div>
+          <div class="campo">
+            <label for="telefono">Teléfono:</label>
+            <input id="telefono" type="tel" placeholder="Tu Teléfono" />
+          </div>
 
-            <div class="campo">
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" cols="30" rows="10"></textarea>
-            </div>
-
+          <div class="campo">
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" cols="30" rows="10"></textarea>
+          </div>
         </fieldset>
 
         <fieldset>
-            <legend>País</legend>
-            <div class="campo">
-              <label for="pais">País</label>
-              <select id="pais">
-                <option value="" disabled>-- Seleccione --</option>
-                <option value="MX">México</option>
-                <option value="PR">Perú</option>
-                <option value="CO">Colombia</option>
-                <option value="AR" selected>Argentina</option>
-                <option value="ES">España</option>
-                <option value="CL">Chile</option>
-              </select>
-
-            </div>
+          <legend>País</legend>
+          <div class="campo">
+            <label for="pais">País</label>
+            <select id="pais">
+              <option value="" disabled>-- Seleccione --</option>
+              <option value="MX">México</option>
+              <option value="PR">Perú</option>
+              <option value="CO">Colombia</option>
+              <option value="AR" selected>Argentina</option>
+              <option value="ES">España</option>
+              <option value="CL">Chile</option>
+            </select>
+          </div>
         </fieldset>
 
+        <fieldset>
+          <legend>Información Extra</legend>
+
+          <div class="campo">
+            <label for="cliente">Cliente</label>
+            <input id="cliente" type="radio" name="tipo" value="cliente" />
+          </div>
+          <div class="campo">
+            <label for="proveedor">Proveedor</label>
+            <input id="proveedor" type="radio" name="tipo" value="proveedor" />
+          </div>
+        </fieldset>
       </form>
-
-
     </main>
 
     <footer class="site-footer">
