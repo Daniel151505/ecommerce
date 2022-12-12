@@ -60,14 +60,27 @@
             </div>
 
             <div class="campo">
-                <label for="telefono">Mensaje:</label>
-                <textarea cols="30" rows="10"></textarea>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" cols="30" rows="10"></textarea>
             </div>
 
         </fieldset>
 
         <fieldset>
             <legend>País</legend>
+            <div class="campo">
+              <label for="pais">País</label>
+              <select id="pais">
+                <option value="" disabled>-- Seleccione --</option>
+                <option value="MX">México</option>
+                <option value="PR">Perú</option>
+                <option value="CO">Colombia</option>
+                <option value="AR" selected>Argentina</option>
+                <option value="ES">España</option>
+                <option value="CL">Chile</option>
+              </select>
+
+            </div>
         </fieldset>
 
       </form>
